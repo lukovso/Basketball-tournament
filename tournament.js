@@ -22,12 +22,12 @@ function izracunajFormuTima(ISOKodTima) {
 
 
 function izracunajRezultatUtakmice(tim1, tim2) {
-    var razlikaRangiranja = tim2.FIBARanking - tim1.FIBARanking; 
-    var formaTima1 = izracunajFormuTima(tim1.ISOCode);
-    var formaTima2 = izracunajFormuTima(tim2.ISOCode);
+    let razlikaRangiranja = tim2.FIBARanking - tim1.FIBARanking; 
+    let formaTima1 = izracunajFormuTima(tim1.ISOCode);
+    let formaTima2 = izracunajFormuTima(tim2.ISOCode);
 
-    var rezultatTima1 = Math.floor(Math.random() * 20 + 80 + razlikaRangiranja + formaTima1 / 10);
-    var rezultatTima2 = Math.floor(Math.random() * 20 + 80 - razlikaRangiranja + formaTima2 / 10);
+    let rezultatTima1 = Math.floor(Math.random() * 20 + 80 + razlikaRangiranja + formaTima1 / 10);
+    let rezultatTima2 = Math.floor(Math.random() * 20 + 80 - razlikaRangiranja + formaTima2 / 10);
 
     return [rezultatTima1, rezultatTima2];
 }
